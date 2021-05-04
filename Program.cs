@@ -10,14 +10,30 @@ namespace TestInterface
     {
         static void Main(string[] args)
         {
-            Cat tom = new Cat();
-            tom.AttackSpeed = 10;
+            //Cat tom = new Cat();
+            //tom.AttackSpeed = 15;
 
-            Fish frenzy = new Fish();
-            frenzy.FleeSpeed = 12;
+            //Fish frenzy = new Fish();
+            //frenzy.FleeSpeed = 12;
 
-            tom.Purr();
-            tom.Attack(frenzy);
+            //IPredator tom = new Cat();
+            //tom.AttackSpeed = 10;
+
+            // IPrey frenzy = new Fish();
+            // tom.Purr();
+            // tom.Attack(frenzy);
+
+            IPredator shark = new Fish();
+            shark.AttackSpeed = 20;
+
+           
+            IPrey ray = new Fish();
+            ray.FleeSpeed = 15;
+
+            shark.Attack(ray);
+
+           
+            Console.Read();
 
         }
     }

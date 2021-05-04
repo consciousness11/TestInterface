@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestInterface
 {
-    interface IPrey
+   public interface IPrey
     {
         int FleeSpeed { get; set; }
         void Flee();

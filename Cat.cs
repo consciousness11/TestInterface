@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestInterface
 {
-   public  class Cat : IPredator
+   public class Cat : IPredator
     {
         private int _attackSpeed;
       //  public int AttackSpeed { get; set; }
